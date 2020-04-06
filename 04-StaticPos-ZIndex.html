@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>CSS Positioning</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<style>
+		.body {
+			background-color: #1f1f1f1f;
+			color: #bfbfbf;
+		}
+
+		h1 {
+			font-weight: normal;
+		}
+
+		em {
+			color: #e07a05;
+		}
+
+		.box {
+			width:100px;
+			height: 100px;
+			margin-bottom: 10px;
+		}
+
+		.bluebox {
+			background-color: #627da0;
+			position: static; 
+			top:100px;
+		}
+
+		.greenbox {
+			background-color: #5b8054;
+		}
+	</style>
+
+	<!-- 
+		position static
+		===============
+		// static positioning is the default behaviour of elements, changing top, left etc will not make any differentce.
+
+		inherited positioning
+		=====================
+		// Inherirted posisioning - tells the element to inherit the position poroperty for it's parent. 
+
+		sticky positioning
+		==================
+		// not supported yet 
+
+		z-index
+		=======
+		// Controls the verical stacking order of  elements. 
+		// Elements must have a set postion for z-index to work.
+		// seting z-index to -1 -> means below the content layer  
+		// z-index default = 1
+		// z-index = 2 above content layer
+
+	-->
+	<div class="box bluebox"></div>
+	<div class="box greenbox"></div>
+</body>
+</html>
